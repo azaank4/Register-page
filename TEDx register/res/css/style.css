@@ -1,0 +1,408 @@
+/*
+  Table of contents
+  -----------------
+  01. Navbar
+  02. Section - Home
+    - Home BG Static (default)
+    - Home BG Parallax
+    - Home BG Slideshow
+    - Home BG Slider
+  03. Countdown
+  04. Intro
+  05. Section - Team
+  06. Section - Speakers
+  07. Section - Venue
+  08. Section - Schedule
+    - Carousel Schedule
+    - Timeline
+  09. Milestones
+  10. Section - FAQ
+    - Accordions
+    - Nav Stacked
+  11. Section - Ticket
+    - Testimonial
+    - Pricing
+  12. Section - Register
+  13. Section - Contact
+    - Google map
+    - Forms
+  14. Event bottom banner
+  15. Countdown timer
+  16. Footer
+  17. Responsive images
+  18. Features box
+*/
+
+
+
+/*
+  Navbar
+  ------
+*/
+
+.navbar-dark {
+  background-color: black;
+}
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: inherit;
+}
+
+/*
+  Section - Home
+  --------------
+*/
+
+/* Home BG Static (default) */
+
+#home {
+  background: url("../images/bg-home-1.jpg");
+}
+
+
+/* Home BG Parallax */
+
+#home-bg-parallax > .bg-parallax {
+  background: url("../images/logos/bgimg.jpg");
+}
+
+@media(max-width: 479px) {
+  #home-bg-parallax > .bg-parallax {
+    background: url("../images/logos/bg\ img.jpg");
+  }
+}
+
+/* Home BG Slideshow */
+#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+  background: url("../images/logos/bg\ img.jpg");
+}
+#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
+  background: url("../images/bg-homet-1.jpg");
+}
+#home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
+  background: url("../images/bg-homet-3.jpg");
+}
+
+@media(min-width: 479px) {
+  #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(1) {
+    background: url("../images/logos/bgimg.jpg");
+  }
+  #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(2) {
+    background: url("../images/bg-homet-1.jpg");
+  }
+  #home-bg-slideshow .bg-slideshow-wrapper .slides > .bg-cover:nth-child(3) {
+    background: url("../images/bg-homet-3.jpg");
+  }
+}
+
+/* Home BG Slider */
+
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(1) {
+  background: url("../images/bg-homet-1.jpg");
+}
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(2) {
+  background: url("../images/bg-homet-2.jpg");
+}
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(3) {
+  background: url("../images/bg-homet-3.jpg");
+}
+#home-bg-slideshow .display-table-cell,
+#home-bg-slider .display-table-cell {
+  position: relative;
+  z-index: 20;
+}
+
+#slideshow { 
+  margin: 5px auto; 
+  width: 100%; 
+  height: 100%; 
+  padding: 0%;
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+}
+
+#slideshow > div { 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+
+
+
+/*
+  Countdown
+  ---------
+*/
+
+.countdown {
+  -webkit-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.03);
+  top: -35px;
+  z-index: 20;
+}
+.countdown .clock {
+  height: 70px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .countdown .clock {
+    height: 88px;
+    text-align: right;
+  }
+}
+.countdown .clock-item {
+  color: #ffffff;
+  font-family: "Catamaran", sans-serif;
+  border-radius: 2px;
+  display: inline-block;
+  height: 100%;
+  letter-spacing: 1px;
+  margin-right: 5px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 60px;
+}
+.countdown .clock-item:last-child {
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  .countdown .clock-item {
+    margin-right: 7px;
+    width: 75px;
+  }
+}
+
+
+
+/*
+  Intro
+  -----
+*/
+
+#intro .features-box .bg-cover {
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  height: 192px;
+}
+#intro .features-box:nth-child(1) .bg-cover {
+  background-image: url("images/intro-1.jpg");
+}
+#intro .features-box:nth-child(2) .bg-cover {
+  background-image: url("images/intro-2.jpg");
+}
+#intro .features-box:nth-child(3) .bg-cover {
+  background-image: url("images/intro-3.jpg");
+}
+
+
+/*
+  Section - Venue
+  ---------------
+*/
+
+#venue {
+  background-image: url("../images/bg-venue.jpg");
+  background-position: center bottom !important;
+}
+
+/* Nav Stacked */
+
+.nav.nav-pills.nav-stacked > li:first-child > a {
+  border-top-right-radius: 4px !important;
+  border-top-left-radius: 4px !important;
+}
+.nav.nav-pills.nav-stacked > li:last-child > a {
+  border-bottom-right-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}
+.nav.nav-pills.nav-stacked > li > a {
+  color: #272727;
+  padding: 14px 18px;
+}
+
+
+/*
+  Event bottom banner
+  -------------------
+*/
+#event-banner {
+  background-image: url("https://toptal.com/designers/subtlepatterns/patterns/whitediamond.png");
+}
+#event-banner .row {
+  display: flex;
+  flex-direction: column;
+}
+#event-banner .row #banner-registration {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  #event-banner .row {
+    flex-direction: row;
+  }
+  #event-banner .row #banner-registration {
+    margin: auto;
+  }
+}
+
+
+
+/*
+  Countdown timer
+  ---------------
+*/
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+}
+.countdown-timer div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.countdown-timer .value {
+  font-family: Roboto, sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  color: white;
+  align-self: center;
+}
+.countdown-timer .label {
+  font-family: Catamaran, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  padding-top: 8px;
+  align-self: center;
+}
+@media (min-width:420px) {
+  .countdown-timer .value {
+    font-size: 48px;
+  }
+  .countdown-timer .label {
+    padding-top: 16px;
+  }
+}
+@media (min-width:600px) {
+  .countdown-timer .value {
+    font-size: 56px;
+  }
+  .countdown-timer .label {
+    font-size: 18px;
+  }
+}
+@media (min-width:900px) {
+  .countdown-timer .value {
+    font-size: 64px;
+  }
+  .countdown-timer .label {
+    padding-top: 24px;
+  }
+}
+
+
+/*
+  404
+  ------
+*/
+
+#not-found {
+  background-color: white;
+  background-position: center bottom !important;
+}
+
+
+/*
+  Footer
+  ------
+*/
+
+.footer {
+  padding: 50px 0 32px;
+}
+.footer-logo {
+  padding-bottom: 25px;
+}
+.footer-logo img {
+  width: 120px;
+}
+.footer .disclaimer {
+  padding-bottom: 25px;
+  font-size: 14px;
+}
+.footer-social {
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .footer-social {
+    padding-bottom: 50px;
+  }
+}
+.footer-social ul > li {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .footer-social ul > li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+.footer-copyright {
+  padding-top: 32px;
+}
+
+
+
+/*
+  Responsive images
+  -----------------
+*/
+
+.img-wrapper {
+  position: relative;
+  padding-bottom: 133.33%;    /* 4:3 aspect ratio */
+  overflow: hidden;
+  width: 100%;
+}
+.img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin: auto;
+}
+
+
+
+/*
+  Features box
+  ------------
+*/
+@media (max-width: 500px) {
+  .row .features-box {
+    margin-bottom: 15px;
+  }
+  .row .features-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .row .features-box {
+    margin-bottom: 15px;
+  }
+  .row .features-box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
